@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2020",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    
+    /* Modules */
+    "module": "commonjs",                                /* Specify what module code is generated. */
+    "rootDir": "./",                                     /* Mudado para incluir tanto src quanto tests */
+    "outDir": "./dist",                                  /* Specify an output folder for all emitted files. */
+    
+    /* Interop Constraints */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+
+    /* Type Checking */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "strictPropertyInitialization": false,               /* Desabilita verificação de inicialização de propriedades para evitar erros com DTOs */
+    
+    /* Completeness */
+    "skipLibCheck": true,                                /* Skip type checking all .d.ts files. */
+    
+    /* Adicionados para suporte a testes */
+    "types": ["jest", "node"],                           /* Adiciona suporte para tipos do Jest e Node */
+    "resolveJsonModule": true                            /* Permite importar arquivos JSON */
+  },
+  "include": ["src/**/*", "tests/**/*"],                 /* Inclui tanto os arquivos de código quanto os de teste */
+  "exclude": ["node_modules", "dist"]                    /* Exclui node_modules e pasta de build */
+}
